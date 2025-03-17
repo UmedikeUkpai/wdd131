@@ -6,14 +6,14 @@ body {
 }
 
 header h1 {
-    background-color: #010a6d;
+    background-color: #03089b;
     color: white;
     text-align: center;
     padding: 2rem;
     margin: 0rem;
 }
 nav ul {
-    background-color: rgb(6, 162, 162);
+    background-color: rgb(220, 139, 0);
     padding: .5rem;
     display: flex;
     justify-content: space-around;
@@ -33,16 +33,20 @@ nav ul {
 .flag-info {
     text-align: center; /* Centers the image and text */
     display: flex;
+    gap: 20px;
     flex-direction: column; /* Ensures text appears below */
     align-items: center; /* Centers items */
     margin-top: 10px; /* Adds spacing */
 }
 
-.flag-info img {
-    width: 100px; /* Adjust flag size */
-    height: auto;
-    border: 1px solid #ccc; /* Optional: Adds a slight border */
-    float: left;
+.flag {
+    width: 80px; /* Adjust flag size */
+    height: auto; /* Keep aspect ratio */
+}
+
+.figcaption {
+    font-size: 14px;
+    color: #555; /* Adjust text color */
 }
 
 .flag-info figcaption {
@@ -55,14 +59,18 @@ nav ul {
 nav a {
     color: aliceblue;
     padding: 1rem;
+    background-color: #03089b;
+    border-radius: 10rem;
 }
 .highlight {
     color: #f1c40f;
 }
 nav ul a:hover {
-    background-color: #f1c40f;
-    color: rgb(10, 0, 90);
-    border-radius: 10px;
+    background-color: #066326;
+    color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    animation: infinite;
+    animation-duration: 0.8ms;
 }
 
 h3 {
@@ -79,12 +87,14 @@ h2 {
 }
 /* Main container for flex layout */
 main {
-    display: flex;
-    grid-template-rows: minmax( 50%, auto);
+    display: grid;
+    grid-template-columns: 60% 40%;
     padding: 20px;
     gap: 15px; /* Spacing between cards */
 }
-
+aside {
+    align-items: center;
+}
 /* Card styling for sections and aside */
 .card {
     background-color: white;
