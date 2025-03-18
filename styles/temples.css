@@ -1,0 +1,15 @@
+header {
+    background-color: rgb(114, 13, 135);
+    padding: 1rem;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: aliceblue;
+}
+nav a {
+    color: aliceblue;
+    padding: 10px;
+    background-color: #83cd14;
+    border-radius: 5rem;
+}

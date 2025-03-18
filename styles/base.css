@@ -119,8 +119,8 @@ footer {
     background-color: #010a6d; /* Dark blue background */
     color: white;
     text-align: center;
-    padding: 15px;
-    display: flex;
+    padding: 1px;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
