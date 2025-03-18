@@ -28,7 +28,7 @@ nav {
     text-align: center;
 }
 h1 {
-    text-align: center;
+    justify-content: center;
 }
 figure img {
     width: 20rem;
