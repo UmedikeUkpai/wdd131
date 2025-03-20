@@ -23,8 +23,8 @@ main {
 }
 
 h2 {
-	color: navy;
-	text-align: center;
+	color: rgb(6, 6, 156);
+	text-align: left;
 }
 
 article p {
@@ -32,8 +32,8 @@ article p {
 }
 
 .callout {
-	color: #777;
-	background-color: #702963;
+	color: #ffffff;
+	background-color: #080ba2;
 }
 
 footer {
