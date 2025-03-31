@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4bba54a7;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    justify-content: center;
+}
+h1 {
+    background-color: #037e2a;
+    color: white;
+    padding: 2.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.weather-icon {
+    width: 50px; 
+    height: 50px;
+    margin: .5rem;
+    padding: -1rem;
+}
+
+h2 {
+    color: #ffffff;
+    background-color: #037e2a;
+    margin-left: -2rem;
+    padding: 20px;
+
+}
+
+.data {
+    background-color: #ffffffbf;
+    padding: 8px;;
+    border-radius: 10px;
+    width: 30rem;
+    height: auto;
+    font-size: larger;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+}
+.weather {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 20rem;
+    font-size: larger;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    align-items: center;
+}
+
+.data, .weather:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #037e2a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background-image: url('antelope.jpg'); /* Replace 'lemurs.jpg' with your image filename */
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keeps the image static during scrolling */
+}
