@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Nigeria, its culture, weather, and essential data.">"
+    <meta name="author" content="Umedike Ukpai Godwin">
     <title>WDD 131: Dinamic Web Fundamentals - Umedike Ukpai</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="Continer">
-        <header>
-            <h1>Nigeria</h1>
-        </header>
-        <img src="images/antelope_15.jpg" alt="Heroimage">
-        <main>
-            <section class="data">
+    <header>
+        <h1>Discover Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/nigeria-large.webp">
+                <source media="(max-width: 500px)" srcset="images/nigeria-medium.webp">
+                <img src="images/nigeria-small.webp" alt="nigeria beach" width="500" height="250">
+            </picture>
+        </div>
+        <section class="info data">
+            <div class="dataheading">
                 <h2>Data</h2>
-                    <ul>
-                        <p><strong>Area:</strong> 923,769 sq km</p>
-                        <p><strong>Population:</strong> 230 million +</p>
-                        <p><strong>Capital:</strong> Abuja</p>
-                        <p><strong>Languages:</strong> English, Hausa, Igbo, Yoruba</p>
-                        <p><strong>Currency:</strong> Naira</p>
-                        <p><strong>Time Zone:</strong> UTC+1</p>
-                        <p><strong>Calling Code:</strong> +234</p>
-                        <p><strong>Internet TLD:</strong> .ng</p>
-                    </ul>
-            </section>
-            <section class="weather">
-                <h2>
-                    Weather <img src="images/weather.jpg" alt="Weather Icon" class="weather-icon">
-                </h2>
-                    <ul>
-                        <p><strong>Temperature:</strong> <span id="temperature">32</span>°C</p>
-                        <p><strong>Conditions:</strong> Mostly clear</p>
-                        <p><strong>Wind:</strong> 7 km/h</p>
-                        <p><strong>Humidity:</strong> 41%</p>
-                    </ul>
-            </section>
-        </main>
-        <footer>
-            <p>©2025 ❣ Umedike Ukpai Godwin ❣ Nigeria</p>
-            <p>Last Modification: 02/08/2024 22:47:47</p>
-        </footer>
-    </div>
+            </div>
+            <div class="row">
+                <div class="col">Area: </div>
+                <div class="col">587,041 sq km</div>
+            </div>
+            <div class="row">
+                <div class="col">Population: </div>
+                <div class="col">3,737,000</div>
+            </div>
+            <div class="row">
+                <div class="col">Capital: </div>
+                <div class="col">Calabar</div>
+            </div>
+            <div class="row">
+                <div class="col">Language: </div>
+                <div class="col">Efik, Atam</div>
+            </div>
+            <div class="row">
+                <div class="col">Currency: </div>
+                <div class="col">Naira (₦)</div>
+            </div>
+            <div class="row">
+                <div class="col">Time Zone: </div>
+                <div class="col">WAT (UTC+1)</div>
+            </div>
+            <div class="row">
+                <div class="col">Calling Code: </div>
+                <div class="col">+234</div>
+            </div>
+            <div class="row">
+                <div class="col">Internet TLD: </div>
+                <div class="col">.ng</div>
+            </div>
+        </section>
+        <section class="info weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="weather icon" width="50" height="50">
+            </div>
+
+            <div class="row">
+                <div class="col">Average Temperature: </div>
+                <div class="col">27°C (81°F)</div>
+            </div>
+            <div class="row">
+                <div class="col">Rainy Season: </div>
+                <div class="col">March
+                    <div class="row">
+                        <div class="col">Temperature: </div>
+                        <div class="col">10&#176;C</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Conditions: </div>
+                        <div class="col">Partly Cloudy</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wind: </div>
+                        <div class="col">5km/h</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wind Chill: </div>
+                        <div class="col">9.8&#176;C</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        </p id="year">
+        &copy; <span id="currentyear"></span>❣ Umedike Ukpai Godwin ❣ Nigeria
+        </p>
+        <p id="lastModified"></p>
+    </footer>
     <script defer src="place.js"></script>
 </body>
+
 </html>
