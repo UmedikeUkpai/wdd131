@@ -56,8 +56,9 @@ h1 {
     color: white;
     background-color: var(--background-color);
     margin-bottom: 0.5rem;
+    margin-left: -2rem;
     position: relative;
-    padding: 10rem;
+    padding: 1rem;
 
 }
 
