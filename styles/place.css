@@ -19,7 +19,7 @@ header {
     background-color: var(--background-color);
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
@@ -57,7 +57,7 @@ h1 {
     background-color: var(--background-color);
     margin-bottom: 0.5rem;
     position: relative;
-    padding: 1rem;
+    padding: 10rem;
 
 }
 
@@ -79,7 +79,7 @@ h1 {
 /* Top-left and bottom-right placement on large screens */
 @media (min-width: 1000px) {
     .info.data {
-        top: 70px;
+        top: 200px;
         left: 20px;
     }
 
