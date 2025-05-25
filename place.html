@@ -23,7 +23,7 @@
             <picture>
                 <source media="(min-width: 1000px)" srcset="images/nigeria-large.webp">
                 <source media="(max-width: 500px)" srcset="images/nigeria-medium.webp">
-                <img src="images/nigeria-small.webp" alt="nigeria beach" width="500" height="250">
+                <img src="images/nigeria-small.webp" alt="Cross River Landscape" width="500" height="250">
             </picture>
         </div>
         <section class="info data">
@@ -64,9 +64,9 @@
             </div>
         </section>
         <section class="info weather">
-            <div>
+            <div class="flex">
                 <h2>Weather</h2>
-                <img src="images/weather.svg" alt="weather icon" width="50" height="50">
+                <img src="images/weather.svg" alt="weather icon" width="60" height="60" class="mobile-icon">
             </div>
 
             <div class="row">
@@ -75,26 +75,27 @@
             </div>
             <div class="row">
                 <div class="col">Rainy Season: </div>
-                <div class="col">March
-                    <div class="row">
-                        <div class="col">Temperature: </div>
-                        <div class="col">10&#176;C</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Conditions: </div>
-                        <div class="col">Partly Cloudy</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Wind: </div>
-                        <div class="col">5km/h</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">Wind Chill: </div>
-                        <div class="col">9.8&#176;C</div>
-                    </div>
-                </div>
+                <div class="col">March</div>
             </div>
+            <div class="row">
+                <div class="col">Temperature: </div>
+                <div class="col">30&#176;F</div>
+            </div>
+            <div class="row">
+                <div class="col">Conditions: </div>
+                <div class="col">Partly Cloudy</div>
+            </div>
+            <div class="row">
+                <div class="col">Wind: </div>
+                <div class="col">10mph</div>
+            </div>
+            <div class="row">
+                <div class="col">Wind Chill: </div>
+                <div id="wind-chill" class="col"></div>
+            </div>
+
         </section>
+
     </main>
     <footer>
         </p id="year">
