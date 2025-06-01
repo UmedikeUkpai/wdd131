@@ -13,6 +13,7 @@ header {
     gap: 40rem;
     align-items: center;
 }
+
 nav a {
     gap: 10rem;
     color: black;
@@ -22,17 +23,21 @@ nav a {
     background-color: aliceblue;
     text-decoration: none;
 }
+
 nav {
     display: flex;
     gap: 3rem;
     text-align: center;
 }
+
 h1 {
     justify-content: center;
 }
+
 figure img {
     width: 20rem;
 }
+
 main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,6 +45,7 @@ main {
     justify-content: center;
     padding: 20px;
 }
+
 footer {
     background-color: #4b0076;
     color: white;
