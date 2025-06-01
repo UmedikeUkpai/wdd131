@@ -14,107 +14,173 @@ const secondPara = footer.querySelectorAll("p")[1];
 secondPara.textContent = `Last Modified: ${lastModifiedDate}`;
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
+hamButton.setAttribute("aria-expanded", "false");
+hamButton.setAttribute("aria-label", "Toggle menu");
 
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
+
+    const expanded = hamButton.classList.contains("open");
+    hamButton.setAttribute("aria-expanded", expanded.toString());
 });
 const temples = [
     {
-        templeName: "Aba Nigeria",
+        templeName: "Aba Nigeria temple",
         location: "Aba, Nigeria",
         dedicated: "2005, August, 7",
         area: 11500,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+        imageUrl: "images/filtered-temple10.webp",
     },
     {
-        templeName: "Manti Utah",
+        templeName: "Manti Utah temple",
         location: "Manti, Utah, United States",
         dedicated: "1888, May, 21",
         area: 74792,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+        imageUrl: "images/filtered-temple9.webp",
     },
     {
-        templeName: "Payson Utah",
+        templeName: "Payson Utah temple",
         location: "Payson, Utah, United States",
         dedicated: "2015, June, 7",
         area: 96630,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+        imageUrl: "images/filtered-temple8.webp",
     },
     {
-        templeName: "Yigo Guam",
+        templeName: "Yigo Guam temple",
         location: "Yigo, Guam",
         dedicated: "2020, May, 2",
         area: 6861,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+        imageUrl: "images/filtered-temple7.webp",
     },
     {
-        templeName: "Washington D.C.",
+        templeName: "Washington D.C. Temple",
         location: "Kensington, Maryland, United States",
         dedicated: "1974, November, 19",
         area: 156558,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+        imageUrl: "images/filtered-temple6.webp",
     },
     {
-        templeName: "Lima Perú",
+        templeName: "Lima Perú image",
         location: "Lima, Perú",
         dedicated: "1986, January, 10",
         area: 9600,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+        imageUrl: "images/filtered-temple5.webp",
     },
     {
-        templeName: "Mexico City Mexico",
+        templeName: "Mexico City Mexico temple",
         location: "Mexico City, Mexico",
         dedicated: "1983, December, 2",
         area: 116642,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        imageUrl: "images/filtered-temple4.webp",
     },
     // Add more temple objects here...
     {
-        templeName: "Salt Lake City Utah",
+        templeName: "Salt Lake City Utah temple",
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
-        area: 109000,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-city-temple-exterior-2.jpg"
+        area: 106000,
+        imageUrl: "images/filtered-temple1.webp",
     },
     {
-        templeName: "Provo City Center Utah",
+        templeName: "Provo City Center Utah temple",
         location: "Provo, Utah, United States",
         dedicated: "2016, March, 20",
         area: 70000,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center-utah/400x250/provo-city-center-temple-exterior-2.jpg"
-    }
-    {
-        templeName: "Bountiful Utah",
-        location: "Bountiful, Utah, United States",
-        dedicated: "1995, June, 6",
-        area: 100000,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-utah-temple-exterior-2.jpg",
+        imageUrl: "images/filtered-temple2.webp",
     },
     {
-        templeName: "Colonia Juárez Chihuahua",
-        location: "Colonia Juárez, Chihuahua, Mexico",
-        dedicated: "1999, August, 29",
+        templeName: "Anchorage Alaska temple",
+        location: "Anchorage, Alaska, United States",
+        dedicated: "2010, May, 2",
         area: 10000,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-chihuahua/400x250/colonia-juarez-chihuahua-temple-exterior-2.jpg",
-    },
-    {
-        templeName: "Denver Colorado",
-        location: "Denver, Colorado, United States",
-        dedicated: "1986, October, 23",
-        area: 100000,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/denver-colorado/400x250/denver-colorado-temple-exterior-2.jpg",
+        imageUrl: "images/filtered-temple3.webp",
     },
 ];
+
+const cardsContainer = document.querySelector("#temple-cards");
+
+// Utility to extract year from dedication date string
+function getYear(dedicatedStr) {
+    return parseInt(dedicatedStr.split(",")[0]);
+}
+
+// Function to create the HTML string for a temple card (using map returns an array of HTML strings)
+function createTempleCards(templeArray) {
+    // Use map to transform each temple object into an HTML string for the card
+    return templeArray
+        .map(
+            (temple) => `
+    <section class="temple-card">
+      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy" />
+      <h3>${temple.templeName}</h3>
+      <p>Location: ${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Area: ${temple.area.toLocaleString()} sq ft</p>
+    </section>
+  `
+        )
+        .join(""); // join all HTML strings into one big string
+}
+
+// Function to display temples by inserting HTML into container
+function displayTemples(templeArray) {
+    cardsContainer.innerHTML = createTempleCards(templeArray);
+}
+
+// Show all temples initially
+displayTemples(temples);
+
+// FILTERS USING FILTER METHOD
+
+// Old temples: built before 1900
+function filterOld() {
+    return temples.filter((temple) => getYear(temple.dedicated) < 1900);
+}
+
+// New temples: built after 2000
+function filterNew() {
+    return temples.filter((temple) => getYear(temple.dedicated) > 2000);
+}
+
+// Large temples: area > 90000 sq ft
+function filterLarge() {
+    return temples.filter((temple) => temple.area > 90000);
+}
+
+// Small temples: area < 10000 sq ft
+function filterSmall() {
+    return temples.filter((temple) => temple.area < 10000);
+}
+
+// BONUS: Using reduce to find the total area of all temples displayed
+function totalArea(templeArray) {
+    return templeArray.reduce((sum, temple) => sum + temple.area, 0);
+}
+
+// EVENT LISTENERS
+
+document.querySelector("#home").addEventListener("click", (e) => {
+    e.preventDefault();
+    displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", (e) => {
+    e.preventDefault();
+    displayTemples(filterOld());
+});
+
+document.querySelector("#new").addEventListener("click", (e) => {
+    e.preventDefault();
+    displayTemples(filterNew());
+});
+
+document.querySelector("#large").addEventListener("click", (e) => {
+    e.preventDefault();
+    displayTemples(filterLarge());
+});
+
+document.querySelector("#small").addEventListener("click", (e) => {
+    e.preventDefault();
+    displayTemples(filterSmall());
+});
