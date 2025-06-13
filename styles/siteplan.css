@@ -1,0 +1,309 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #0a3140;
+    /* Primary color */
+    --secondary-color: hwb(134 0% 69%);
+    /* Secondary color */
+    --accent1-color: hsl(0, 0%, 100%);
+    /* Accent color 1 */
+    --accent2-color: #000000;
+    /* Accent color 2 */
+    --light-text-color: hsl(0, 0%, 100%);
+    /* Light text color for dark backgrounds */
+    --dark-background: #191a19c1;
+    /* Dark background */
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Roboto', sans-serif;
+    --threecol:
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 300px;
+    background-color: var(--primary-color);
+
+}
+
+header img {
+    margin: 0.5rem 0.1rem 0.5rem 10rem;
+    width: 100px;
+    height: auto;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    padding: 0.1px;
+}
+
+figure img {
+    padding: 0.1rem;
+}
+
+main article img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+h2 {
+    margin: 0.1rem;
+    color: white;
+    text-align: center;
+    border: 0.1rem;
+    padding: 0.1rem;
+    background-color: #0a3140;
+}
+
+.threecols {
+    display: grid;
+    grid-template-columns: (1fr 2fr 100px);
+    text-align: justify;
+    color: #000;
+    text-wrap: wrap;
+    align-items: center;
+}
+
+.threecols p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    margin: 2rem;
+}
+
+.threecols h2 {
+    grid-column: 1/4;
+}
+
+article p {
+    margin: 100;
+}
+
+header nav a {
+    color: black;
+    flex-shrink: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+
+section h2 div img {
+    margin: 0rem;
+    padding: 0rem;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.herodiv img {
+    margin: 10rem;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    left: 0px;
+    font-size: 50px;
+    color: var(--light-text-color);
+    background-color: var(--dark-background);
+    text-align: center;
+}
+
+article {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    background-color: rgba(6, 44, 114, 0.6);
+    padding: 5px;
+    max-width: 940px;
+}
+
+article p {
+    color: var(--light-text-color);
+}
+
+article img {
+    float: right;
+    width: 170px;
+    height: auto;
+    padding: 5px;
+}
+
+section {
+    margin: 2rem auto;
+}
+
+.flex-container {
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.main img {
+    width: 160px;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.flexcontainer {
+    display: flex;
+    color: #000;
+    align-items: center;
+    gap: 4rem;
+}
+
+.flexcontainer img {
+    border-radius: 10rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    word-spacing: 5px;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+input {
+    width: 40rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+
+.h2 img {
+    width: 50px;
+    align-items: center;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.th {
+    background-color: #000;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+button {
+    margin: 1rem;
+    background-color: rgb(0, 0, 76);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: rgb(3, 103, 25);
+}
+
+.h1 {
+    text-align: center;
+    font-size: 2rem;
+    word-spacing: 5px;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h2 img {
+    margin: 0.1rem;
+}
+
+section p {
+    margin: 0 1rem 0 1rem;
+    font-family: var(--text-font);
+    color: var(--primary-color);
+}
+
+section img {
+    width: 160px;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+section figcaption {
+    text-align: center;
+}
+
+footer {
+    margin: .1rem auto;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+footer nav a img {
+    display: inline;
+    width: 64px;
+    height: auto;
+    padding: 15px;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+
+footer p {
+    text-align: center;
+    color: var(--light-text-color);
+    font-size: smaller;
+    margin-right: 30px;
+}
