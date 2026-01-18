@@ -25,7 +25,7 @@ nav {
     justify-content: justify;
 }
 
-Menu{
+.menu-button{
     background: none;
     border: none;
     font-size: 2rem;
