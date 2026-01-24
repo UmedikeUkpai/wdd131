@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about Ebonyi State and its culture.">
     <meta name="author" content="Ukpai Godwin Umedike">
-    <title>Discover Ebonyi Culture: Explore the Beauty and Culture</title>
+    <title>WDD 131 (W3) Country Page - Ukpai Godwin Umedike</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,46 +14,46 @@
 </head>
 <body>
     <header>
-        <h1>Discover Ebonyi culture </h1>
+    <h1>Nigeria</h1>
     </header>
     <main>
         <div class="hero">
             <picture>
                 <!-- Mobile image -->
-                <source srcset="images/ebonyi_state_small.jpeg" media="(max-width: 768px)">
+                <source srcset="images/nigeria-small.webp" media="(max-width: 768px)">
 
                 <!-- Desktop image -->
-                <source srcset="images/ebonyi_cultural_dance.jpg" media="(min-width: 769px)">
+                <source srcset="images/nigeria-large.webp" media="(min-width: 769px)">
 
                 <!-- Fallback image -->
-                <img src="images/ebonyi_cultural_dance.jpg" alt="Discover Ebonyi Culture" class="hero-img">
+                <img src="images/nigeria-large.webp" alt="Nigeria" class="hero-img">
             </picture>
         </div>
         <section class="info data">
             <div class = "dataheading"><h2>Data</h2></div>
             <div class="row">
                 <div class="col">Area: </div>
-                <div class="col">6,400 km2 (2,500 sq mi)</div>
+                <div class="col">923,769 km2 (356,669 sq mi)</div>
             </div>
             <div class="row">
                 <div class="col">Population: </div>
-                <div class="col">3,242,500</div>
+                <div class="col">236,747,130</div>
             </div>
             <div class="row">
                 <div class="col">Capital: </div>
-                <div class="col">Abakaliki</div>
+                <div class="col">Abuja [9°4′N 7°29′E]</div>
             </div>
             <div class="row">
                 <div class="col">Language: </div>
-                <div class="col">Igbo/English</div>
+                <div class="col">English, Igbo, Hausa, Yoruba</div>
             </div>
             <div class="row">
                 <div class="col">Currency: </div>
-                <div class="col">Naira (₦)</div>
+                <div class="col">Naira (₦) (NGN)</div>
             </div>
             <div class="row">
                 <div class="col">Time Zone: </div>
-                <div class="col">WAT (UTC+1)</div>
+                <div class="col">UTC+01:00 (WAT)</div>
             </div>
             <div class="row">
                 <div class="col">Calling Code: </div>
@@ -74,39 +74,32 @@
                 <div class="col">6°15′N 8°05′E</div>
             </div>
             <div class="row">
-                <div class="col">Average Temperature: </div>
-                <div class="col">20-38°C (81°F)</div>
-            </div>
-            <div class="row">
                 <div class="col">Rainy Season: </div>
                 <div class="col">March</div>
             </div>
             <div class="row">
                 <div class="col">Temperature: </div>
-                <div class="col">32&#176;F</div>
+                <div class="col" id="temperature">32&#176;F</div>
             </div>
             <div class="row">
                 <div class="col">Conditions: </div>
                 <div class="col">Sunny</div>
             </div>
             <div class="row">
-                <div class="col">Wind: </div>
-                <div class="col">10mph</div>
+                <div class="col">Wind Speed: </div>
+                <div class="col" id="windSpeed">10 mph</div>
             </div>
             <div class="row">
                 <div class="col">Wind Chill: </div>
-                <div id="wind-chill" class="col"></div>
+                <div class="col" id="windChill"></div>
             </div>
-
         </section>
-
     </main>
     <footer>
         <p id="year">
             <span id="currentyear"></span>
         </p>
         <p id="lastModified"></p>
-    </footer>
-    
+    </footer>    
 </body>
 </html>
