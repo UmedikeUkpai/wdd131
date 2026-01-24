@@ -1,5 +1,5 @@
 :root{
-    --background-color:  #006400;
+    --background-color:  #2b49ae;
 }
 
 * {
@@ -32,12 +32,6 @@ h1 {
     width: 100%;
     height: auto;
     overflow: hidden;
-}
-
-.hero picture img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 
