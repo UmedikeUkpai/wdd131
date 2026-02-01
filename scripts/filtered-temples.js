@@ -100,41 +100,6 @@ const temples = [
     area: 10000,
     imageUrl: "images/filtered-temples3.webp",
   },
-  {
-    templeName: "Rome Italy temple",
-    location: "Rome, Italy",
-    dedicated: "2019, March, 10",   
-    area: 162000,
-    imageUrl: "images/filtered-temples11.webp",
-  }
-  {
-    templeName: "Tokyo Japan temple",
-    location: "Tokyo, Japan",
-    dedicated: "1980, October, 27", 
-    area: 102000,
-    imageUrl: "images/filtered-temples12.webp",
-  }
-  {
-    templeName: "Hong Kong China temple",
-    location: "Hong Kong, China",
-    dedicated: "1996, July, 7", 
-    area: 10000,
-    imageUrl: "images/filtered-temples13.webp",
-  }
-  {
-    templeName: "Sydney Australia temple",
-    location: "Sydney, Australia",
-    dedicated: "1984, September, 15",
-    area: 110000,
-    imageUrl: "images/filtered-temples14.webp",
-  }
-  {
-    templeName: "London England temple",
-    location: "London, England",
-    dedicated: "1958, September, 7",
-    area: 9000,
-    imageUrl: "images/filtered-temples15.webp",
-  }
 ];
 
 const cardsContainer = document.querySelector("#temple-cards");
