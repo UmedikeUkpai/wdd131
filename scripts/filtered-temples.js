@@ -100,6 +100,21 @@ const temples = [
     area: 10000,
     imageUrl: "images/filtered-temples3.webp",
   },
+  {
+    templeName: "Rome Italy temple",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",   
+    area: 162000,
+    imageUrl: "images/filtered-temples11.webp",
+  },
+  {
+    templeName: "Tokyo Japan temple",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27",
+    area: 102000,
+    imageUrl: "images/filtered-temples12.webp",
+  }
+  
 ];
 
 const cardsContainer = document.querySelector("#temple-cards");
