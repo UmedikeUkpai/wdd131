@@ -174,4 +174,53 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   // Add more temple objects here...
-];
+  {
+    templeName: "Tokyo Japan",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27", 
+    area: 102000,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-exterior-1080173-wallpaper.jpg"
+  }
+
+  {
+    templeName: "Salt Lake Temple",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",  
+    area: 253015,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-exterior-2-1080174-wallpaper.jpg"
+  }
+  {
+    templeName: "Accra Ghana",
+    location: "Accra, Ghana",
+    dedicated: "2004, January, 11",  
+    area: 12000,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/400x250/accra-ghana-temple-exterior-1080175-wallpaper.jpg"
+  }
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10", 
+    area: 70000,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-exterior-1080176-wallpaper.jpg"
+  }
+  {
+    templeName: "Kuala Lumpur Malaysia",
+    location: "Kuala Lumpur, Malaysia",
+    dedicated: "2023, June, 4", 
+    area: 8500,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kuala-lumpur-malaysia/400x250/kuala-lumpur-malaysia-temple-exterior-1080177-wallpaper.jpg"
+  }
+  {
+    templeName: "Sapporo Japan",
+    location: "Sapporo, Japan",
+    dedicated: "2016, October, 16", 
+    area: 9500,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-temple-exterior-1080178-wallpaper.jpg"
+  }
+]; 
