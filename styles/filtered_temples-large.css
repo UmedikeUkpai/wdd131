@@ -1,0 +1,36 @@
+@media only screen and (min-width: 32rem) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        margin: 20px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    #nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #nav-links a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #temple-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+}
