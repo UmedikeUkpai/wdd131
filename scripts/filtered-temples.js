@@ -29,63 +29,113 @@ hamButton.addEventListener("click", () => {
 
 const temples = [
   {
-    templeName: "Aba Nigeria",
+    templeName: "Aba Nigeria temple",
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
     area: 11500,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    imageUrl: "images/filtered-temples10.webp",
   },
   {
-    templeName: "Manti Utah",
+    templeName: "Manti Utah temple",
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
     area: 74792,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    imageUrl: "images/filtered-temples9.webp",
   },
   {
-    templeName: "Payson Utah",
+    templeName: "Payson Utah temple",
     location: "Payson, Utah, United States",
     dedicated: "2015, June, 7",
     area: 96630,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    imageUrl: "images/filtered-temples8.webp",
   },
   {
-    templeName: "Yigo Guam",
+    templeName: "Yigo Guam temple",
     location: "Yigo, Guam",
     dedicated: "2020, May, 2",
     area: 6861,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    imageUrl: "images/filtered-temples7.webp",
   },
   {
-    templeName: "Washington D.C.",
+    templeName: "Washington D.C. Temple",
     location: "Kensington, Maryland, United States",
     dedicated: "1974, November, 19",
     area: 156558,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    imageUrl: "images/filtered-temples6.webp",
   },
   {
-    templeName: "Lima Perú",
+    templeName: "Lima Perú image",
     location: "Lima, Perú",
     dedicated: "1986, January, 10",
     area: 9600,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    imageUrl: "images/filtered-temples5.webp",
   },
   {
-    templeName: "Mexico City Mexico",
+    templeName: "Mexico City Mexico temple",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
     area: 116642,
-    imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    imageUrl: "images/filtered-temples4.webp",
   },
+
   // Add more temple objects here...
-];  
+  {
+    templeName: "Salt Lake City Utah temple",
+    location: "Salt Lake City, Utah, United States",
+    dedicated: "1893, April, 6",
+    area: 106000,
+    imageUrl: "images/filtered-temples1.webp",
+  },
+  {
+    templeName: "Provo City Center Utah temple",
+    location: "Provo, Utah, United States",
+    dedicated: "2016, March, 20",
+    area: 70000,
+    imageUrl: "images/filtered-temples2.webp",
+  },
+  {
+    templeName: "Anchorage Alaska temple",
+    location: "Anchorage, Alaska, United States",
+    dedicated: "2010, May, 2",
+    area: 10000,
+    imageUrl: "images/filtered-temples3.webp",
+  },
+  {
+    templeName: "Rome Italy temple",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",   
+    area: 162000,
+    imageUrl: "images/filtered-temples11.webp",
+  },
+  {
+    templeName: "Kyiv Ukraine temple",
+    location: "Kyiv, Ukraine",
+    dedicated: "2010, August, 29",
+    area: 7700,
+    imageUrl: "images/filtered-temples13.webp",
+  },
+  {
+    templeName: "Bern Switzerland temple",
+    location: "Bern, Switzerland",
+    dedicated: "1955, September, 11",
+    area: 87000,
+    imageUrl: "images/filtered-temples14.webp",
+  },
+  {
+    templeName: "Hong Kong China temple",
+    location: "Hong Kong, China",
+    dedicated: "1996, July, 26",
+    area: 10500,
+    imageUrl: "images/filtered-temples15.webp",
+  }
+  {
+    templeName: "Tokyo Japan temple",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27",
+    area: 102000,
+    imageUrl: "images/filtered-temples12.webp",
+  }
+  
 ];
 
 const cardsContainer = document.querySelector("#temple-cards");
