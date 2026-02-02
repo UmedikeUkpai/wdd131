@@ -50,13 +50,13 @@ header nav {
     font-weight: 500;
     padding: 6px 14px;
     border-radius: 4px;
-    transition: background 0.2s, color 0.2s;
+    transition: var(--background-color) 0.2s, color 0.2s;
 }
 
 .navigation a:hover,
 .navigation a:focus {
-    background: #2b49ae;
-    color: #ffe066;
+    background: #f8f9f9;
+    color: #2002c9;
 }
 
 .navigation .active {
@@ -109,10 +109,17 @@ header nav {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1500px;
     background: #f7f6fa;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(49, 31, 106, 0.08);
+}
+{
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 
