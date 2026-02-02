@@ -55,7 +55,7 @@ header nav {
 
 .navigation a:hover,
 .navigation a:focus {
-    background: #5e4bb7;
+    background: #2b49ae;
     color: #ffe066;
 }
 
@@ -197,7 +197,7 @@ footer {
 
 #lastModified {
     font-size: 0.8em;
-    color: #070800;
+    color: #e3e008;
 }
 
 #year {
