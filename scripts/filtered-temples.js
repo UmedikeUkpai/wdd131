@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear();
 // Insert current year into the first <p> in the footer
 const footer = document.querySelector("footer");
 const firstPara = footer.querySelector("p");
-firstPara.textContent = `© ${currentYear} ❣️Ukpai Godwin Umedike❣️ Nigeria`;
+firstPara.textContent = `© ${currentYear} | ❣️Ukpai Godwin Umedike❣️ Nigeria`;
 
 // Get the last modified date of the document
 const lastModifiedDate = document.lastModified;
@@ -77,6 +77,8 @@ const temples = [
     area: 116642,
     imageUrl: "images/filtered-temples4.webp",
   },
+
+  // Add more temple objects here...
   {
     templeName: "Salt Lake City Utah temple",
     location: "Salt Lake City, Utah, United States",
@@ -91,29 +93,6 @@ const temples = [
     area: 70000,
     imageUrl: "images/filtered-temples2.webp",
   },
-
-  // Add more temple objects here...
-  {
-    templeName: "Tokyo Japan temple",
-    location: "Tokyo, Japan",
-    dedicated: "1980, October, 27",
-    area: 53500,
-    imageUrl: "images/filtered-temples11.webp",
-  },
-  {
-    templeName: "Rome Italy temple",
-    location: "Rome, Italy",
-    dedicated: "2019, March, 10",
-    area: 7000,
-    imageUrl: "images/filtered-temples12.webp",
-  },
-  {
-    templeName: "Kuala Lumpur Malaysia temple",
-    location: "Kuala Lumpur, Malaysia",
-    dedicated: "2023, June, 4",
-    area: 12000,
-    imageUrl: "images/filtered-temples13.webp",
-  }
   {
     templeName: "Anchorage Alaska temple",
     location: "Anchorage, Alaska, United States",
@@ -121,9 +100,6 @@ const temples = [
     area: 10000,
     imageUrl: "images/filtered-temples3.webp",
   },
-  {
-    
-  }
 ];
 
 const cardsContainer = document.querySelector("#temple-cards");
