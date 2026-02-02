@@ -31,7 +31,7 @@ header {
 }
 
 main {
-    max-width:fit-content;
+    max-width:auto;
     margin: 0 auto;
     display: grid;
 }
