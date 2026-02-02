@@ -71,6 +71,20 @@ const temples = [
     imageUrl: "images/filtered-temples5.webp",
   },
   {
+    templeName: "São Paulo Brazil temple",
+    location: "São Paulo, Brazil",
+    dedicated: "1978, October, 30",
+    area: 114000,
+    imageUrl: "images/filtered-temples14.webp",
+  },
+  {
+    templeName: "Cardston Alberta temple",
+    location: "Cardston, Alberta, Canada",
+    dedicated: "1923, August, 26",
+    area: 70000,
+    imageUrl: "images/filtered-temples15.webp",
+  }
+  {
     templeName: "Mexico City Mexico temple",
     location: "Mexico City, Mexico",
     dedicated: "1983, December, 2",
