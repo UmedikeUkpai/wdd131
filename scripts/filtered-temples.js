@@ -100,6 +100,27 @@ const temples = [
     area: 10000,
     imageUrl: "images/filtered-temples3.webp",
   },
+  {
+    templeName: "Tokyo Japan temple",
+    location: "Tokyo, Japan",
+    dedicated: "1980, October, 27",
+    area: 102000,
+    imageUrl: "images/filtered-temples11.webp",
+  },
+  {
+    templeName: "Bern Switzerland temple",
+    location: "Bern, Switzerland",
+    dedicated: "1955, September, 11",
+    area: 8700,
+    imageUrl: "images/filtered-temples12.webp",
+  },
+  {
+    templeName: "Hong Kong China temple",
+    location: "Hong Kong, China",
+    dedicated: "1996, July, 26",
+    area: 10500,
+    imageUrl: "images/filtered-temples13.webp",
+  }
 ];
 
 const cardsContainer = document.querySelector("#temple-cards");
