@@ -112,7 +112,7 @@ const temples = [
     location: "Anchorage, Alaska, United States",
     dedicated: "2010, May, 2",
     area: 10000,
-    imageUrl: "images/filtered-temples3.webp",
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
   },
 ];
 
