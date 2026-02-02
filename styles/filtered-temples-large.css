@@ -57,6 +57,12 @@
     transition: transform 0.5s;
     
   }
+  .temple-care:hover
+  {
+    transform: scale(1.05);
+    animation: alternate-reverse;
+    animation-duration: 0.3s;
+  }
 
   .temple-card img {
     width: 100%;
