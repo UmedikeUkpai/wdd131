@@ -105,7 +105,7 @@ const temples = [
     location: "Provo, Utah, United States",
     dedicated: "2016, March, 20",
     area: 70000,
-    imageUrl: "images/provo-city-center-utah-temple.webp",
+    imageUrl: "images/provo-city-center-temple.webp",
   },
   {
     templeName: "Anchorage Alaska temple",
