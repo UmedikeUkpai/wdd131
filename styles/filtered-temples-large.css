@@ -21,7 +21,7 @@
     .navigation {
         display: flex !important;
         flex-direction: row;
-        gap: 32px;
+        gap: 40px;
         background: none;
         position: static;
         width: auto;
