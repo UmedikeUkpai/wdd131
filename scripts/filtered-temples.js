@@ -36,6 +36,20 @@ const temples = [
     imageUrl: "images/filtered-temples10.webp",
   },
   {
+    templeName: "Cardston Alberta temple",
+    location: "Cardston, Alberta, Canada",
+    dedicated: "1923, August, 26",
+    area: 70000,
+    imageUrl: "images/filtered-temples11.webp",
+  },
+  {
+    templeName: "Colonia Juárez Chihuahua Mexico temple",
+    location: "Colonia Juárez, Chihuahua, Mexico",
+    dedicated: "1999, March, 6",
+    area: 10700,
+    imageUrl: "images/filtered-temples12.webp",
+  },
+  {
     templeName: "Manti Utah temple",
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
