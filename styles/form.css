@@ -1,0 +1,118 @@
+:root{
+    --background-color:  #2b49ae;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #c2cef5; /* light blue */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    background-color: #2b49ae; /* deep blue */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    color: white;
+    padding: 20px;
+    border-radius: 1px;
+    font-size: 1.8rem;
+  }
+
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .optional {
+    color: #a80303; /* Red for optional fields */
+    font-style: italic;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #007bff; /* blue for optional */
+  }
+
+  .stars label,
+  .checkboxes label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: normal;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #2b49ae;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #2b49ae;;
+  }
+
+  @media (max-width: 600px) {
+    form {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+
+footer {
+    background: var(--background-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-size: 1em;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+#lastModified {
+    font-size: 0.8em;
+    color: yellow;
+}
+
+#year {
+    font-size: 0.9em;
+    color: white;
+    margin-top: 0;
+}
