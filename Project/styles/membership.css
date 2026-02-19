@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.membership-header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers the heading */
+  flex-direction: column;  /* stack logo above heading */
+}
+
+.logo img {
+  height: 120px; /* bigger logo */
+  margin-bottom: 10px; /* space between logo and heading */
+}
+
+.membership-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center; /* ensures heading is centered */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: #ff9800; /* highlight current page */
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+.progress-bar {
+  background: #eee;
+  padding: 10px;
+}
+
+.progress-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9800;
+}
+
+.progress-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-bar ul li {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.progress-bar ul li.active {
+  font-weight: bold;
+  border-bottom: 3px solid #ff9800;
+  color: #ff9800;
+}
+
+.tab-content {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.membership-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.membership-card h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.membership-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.membership-card ul li {
+  margin-bottom: 5px;
+}
+
+.membership-card p {
+  margin: 5px 0;
+}
+
+.membership-card button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.membership-card button:hover {
+  background: #e68900;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 15px;
+  margin-top: 20px;
+}

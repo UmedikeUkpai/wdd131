@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuukay's Fitness Hub - Home</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals By Ukpai Godwin Umedike, Project page">
+    <meta name="author" content = "Ukpai Godwin Umedike">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/membership.css">
+    <script src="script/project.js" defer></script>
+</head>
+<body>
+ <header class="membership-header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="images/Yuukayshublogo.png" alt="Yuukay's Fitness Hub Logo">
+    </div>
+    <h1>Choose a Membership</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="exercises.html">Exercises</a></li>
+      <li><a href="membership.html" class="active">Membership</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </header>
+<!-- Progress Navigation -->
+<div class="progress-bar">
+  <ul>
+    <li class="active" data-tab="membership">Membership</li>
+    <li data-tab="details">Details</li>
+    <li data-tab="terms">Terms & Conditions</li>
+    <li data-tab="payment">Payment</li>
+    <li data-tab="confirmation">Confirmation</li>
+  </ul>
+</div>
+
+<main class="membership-container">
+    <!-- Beginners Plan -->
+    <div class="membership-card">
+      <h2>#Beginners Package</h2>
+      <ul>
+        <li>8 Visits per month or 1 visit per week</li>
+        <li>Access to online forum</li>
+        <li>Access to Gym & Aerobics</li>
+        <li>Access to 40+ workshops per month</li>
+        <li>Access to 60+ classes per month</li>
+        <li>Freeze not available</li>
+        <li>Visit Anytime</li>
+        <li>Body Scan not available</li>
+      </ul>
+      <p><strong>₦5,000.00 Signup Fee</strong></p>
+      <p><strong>₦7,200.00 Monthly Billing</strong></p>
+      <button onclick="goToDetails('Beginners Package')">Register</button>
+
+
+    <!-- Intermediate Plan -->
+    <div class="membership-card">
+      <h2>#Intermediate Package</h2>
+      <ul>
+        <li>15 Visits per month or 2 visits per week</li>
+        <li>Access to online forum</li>
+        <li>Access to Gym & Aerobics + Instructor</li>
+        <li>Access to 40+ workshops per month</li>
+        <li>Access to 60+ classes per month</li>
+        <li>Freeze not available</li>
+        <li>Visit Anytime</li>
+        <li>Body Scan not available</li>
+      </ul>
+      <p><strong>₦8,000.00 Signup Fee</strong></p>
+      <p><strong>₦13,400.00 Monthly Billing</strong></p>
+      <button>Register</button>
+    </div>
+    
+    <!-- Advanced Plan -->
+    <div class="membership-card">
+      <h2>#Advanced Package</h2>
+      <ul>
+        <li>20 Visits per month or 1 visit per week</li>
+        <li>Access to online forum</li>
+        <li>Access to Gym, Aerobics & Calisthenic + Instructor</li>
+        <li>Access to 40+ workshops per month</li>
+        <li>Access to 60+ classes per month</li>
+        <li>Freeze available</li>
+        <li>Visit Anytime</li>
+        <li>Body Scan available</li>
+      </ul>
+      <p><strong>₦10,000.00 Signup Fee</strong></p>
+      <p><strong>₦17,200.00 Monthly Billing</strong></p>
+      <button>Register</button>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="membership-card">
+      <h2>#Premium Package</h2>
+      <ul>
+        <li>Unlimited Visits per month</li>
+        <li>Access to online forum</li>
+        <li>Access to Gym, Aerobics, Calisthenic & Yoga + Instructor</li>
+        <li>Access to 40+ workshops per month</li>
+        <li>Access to 60+ classes per month</li>
+        <li>Freeze available</li>
+        <li>Visit Anytime</li>
+        <li>Full Body Scan available</li>
+        <li>Personalized Workout Plan + Recocery sessions</li>
+        <li>Personalized Nutrition Plan</li>  
+      </ul>
+      <p><strong>₦12,000.00 Signup Fee</strong></p>
+      <p><strong>₦20,400.00 Monthly Billing</strong></p>
+      <button>Register</button>
+    </div>
+</main>
+
+  <footer>
+    <p>&copy; 2026 Yuukay's Fitness Hub</p>
+  </footer>
+</body>
+</html>
